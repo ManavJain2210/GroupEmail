@@ -20,7 +20,8 @@ for element in array:
     newMessage['Subject'] = "Add Subject" 
     newMessage['From'] = Sender_Email                   
     newMessage['To'] = Reciever_Email                   
-    newMessage.set_content('Add Message') 
+    newMessage.add_header('Content-Type','text/html')
+    newMessage.set_payload("Add Message (text / Html)")
     # Make sure files are in the same directory
     files = ['Pdfname.pdf']
     
