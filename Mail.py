@@ -7,6 +7,7 @@ import numpy as np
 # Make sure files are in the same directory
 df = pd.read_csv('data.csv', error_bad_lines=False , header=None)
 
+# You will have to allow less secure apps (https://myaccount.google.com/lesssecureapps)
 Sender_Email = "email_id"
 Password = "password"
 smtp = smtplib.SMTP_SSL('smtp.gmail.com', 465)  
